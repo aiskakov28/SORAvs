@@ -1,4 +1,4 @@
-# SORA vs Reality: AI Video Comparison Pipeline
+## SORA vs Reality: AI Video Comparison Pipeline
 
 A comprehensive toolkit for analyzing and quantifying bias in AI-generated videos compared to real-world footage. This project provides a structured approach to evaluate how well SORA-generated videos reproduce reality across multiple dimensions.
 
@@ -54,6 +54,8 @@ SORAvs/
 
 ```
 
+*Note: Visualization of pipeline workflow would be helpful here*
+
 ## Installation
 
 ```bash
@@ -90,15 +92,17 @@ python main.py --original-dir path/to/originals --sora-dir path/to/sora --output
 
 ### Additional Options
 
-- --disable-object-detection: Skip object detection (improves stability if issues occur)
-- --max-frames N: Set maximum number of frames to process per video
-- --use-lpips: Enable LPIPS perceptual similarity metric
-- --gpu: Use GPU for processing if available
-- --config path/to/config.yaml: Use a custom configuration file
+- `--disable-object-detection`: Skip object detection (improves stability if issues occur)
+- `--max-frames N`: Set maximum number of frames to process per video
+- `--use-lpips`: Enable LPIPS perceptual similarity metric
+- `--gpu`: Use GPU for processing if available
+- `--config path/to/config.yaml`: Use a custom configuration file
 
 ## Data Preparation
 
-Place your original videos in the data/original_videos/ directory and the corresponding SORA-generated videos in the data/sora_videos/ directory. By default, the program expects matching filenames, but you can configure custom video pairs in config.yaml or via the --pair option.
+Place your original videos in the `data/original_videos/` directory and the corresponding SORA-generated videos in the `data/sora_videos/` directory. By default, the program expects matching filenames, but you can configure custom video pairs in config.yaml or via the `--pair` option.
+
+*Note: Sample comparison output visualization would be valuable here*
 
 ## Configuration
 
@@ -133,7 +137,7 @@ bias_categories:
 
 ## Output
 
-The pipeline generates several types of output in the data/output/ directory:
+The pipeline generates several types of output in the `data/output/` directory:
 
 - JSON results with detailed metrics
 - CSV files with summary metrics
@@ -155,14 +159,16 @@ The pipeline generates several types of output in the data/output/ directory:
 
 The bias analysis shows how SORA's generation quality varies across different demographic and contextual categories. A significant difference in scores between category values may indicate bias in the generation process.
 
+*Note: Bias analysis visualization would enhance understanding here*
+
 ## Extending the Pipeline
 
 You can extend the pipeline in several ways:
 
-- Add new feature extraction methods in feature_extraction.py
-- Implement additional bias categories in config.yaml
-- Create custom visualizations in [visualization.py](http://visualization.py)
-- Add new metrics to the bias_analysis.py module
+- Add new feature extraction methods in `feature_extraction.py`
+- Implement additional bias categories in `config.yaml`
+- Create custom visualizations in `visualization.py`
+- Add new metrics to the `bias_analysis.py` module
 
 ## Limitations
 
@@ -178,3 +184,5 @@ MIT License
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+*Note: A comparison visualization showing original vs SORA-generated frames would be an excellent addition*

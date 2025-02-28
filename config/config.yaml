@@ -1,0 +1,17 @@
+# Configuration for Sora AI Video Bias Analysis
+original_dir: "data/original_videos"
+sora_dir: "data/sora_videos"
+output_dir: "data/output"
+frame_sample_rate: 5
+max_frames: 100
+similarity_threshold: 0.7
+feature_model: "VGG16"
+image_size: 224
+bias_categories:
+  gender: ["male", "female", "nonbinary"]
+  ethnicity: ["asian", "black", "hispanic", "white"]
+  age: ["child", "young", "adult", "elderly"]
+  setting: ["urban", "rural", "indoor", "outdoor"]
+  action: ["walking", "running", "sitting", "standing"]
+plot_dpi: 300
+color_palette: "coolwarm"

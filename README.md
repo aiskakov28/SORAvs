@@ -54,8 +54,6 @@ SORAvs/
 
 ```
 
-*Note: Visualization of pipeline workflow would be helpful here*
-
 ## Installation
 
 ```bash

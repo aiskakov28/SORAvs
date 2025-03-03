@@ -60,7 +60,7 @@ SORAvs/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SORAvs.git
+git clone https://github.com/aiskakov28/SORAvs.git
 cd SORAvs
 
 # Create and activate virtual environment
@@ -101,8 +101,6 @@ python main.py --original-dir path/to/originals --sora-dir path/to/sora --output
 ## Data Preparation
 
 Place your original videos in the `data/original_videos/` directory and the corresponding SORA-generated videos in the `data/sora_videos/` directory. By default, the program expects matching filenames, but you can configure custom video pairs in config.yaml or via the `--pair` option.
-
-*Note: Sample comparison output visualization would be valuable here*
 
 ## Configuration
 
@@ -159,8 +157,6 @@ The pipeline generates several types of output in the `data/output/` directory:
 
 The bias analysis shows how SORA's generation quality varies across different demographic and contextual categories. A significant difference in scores between category values may indicate bias in the generation process.
 
-*Note: Bias analysis visualization would enhance understanding here*
-
 ## Extending the Pipeline
 
 You can extend the pipeline in several ways:
@@ -184,5 +180,3 @@ MIT License
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-*Note: A comparison visualization showing original vs SORA-generated frames would be an excellent addition*
